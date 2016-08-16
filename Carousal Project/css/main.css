@@ -1,0 +1,158 @@
+/* Universal Selectors */
+
+*{
+  box-sizing:border-box;
+}
+
+body{
+  margin:0;
+  font-family: 'Ubuntu Condensed', sans-serif;
+}
+
+li{
+  list-style: none;
+}
+
+.tags{
+  display: none;
+}
+
+/* Display for Mobile */
+@media screen and (max-width: 767px){
+
+  #search-box{
+    display: none;
+  }
+
+  .picture-gallery{
+    text-align:center;
+  }
+
+  .picture-gallery li{
+    display: inline-block;
+    padding: 0;
+    margin-top: 20px;
+    padding: 50px 0;
+  }
+
+  .picture-gallery img{
+    display:inline-block;
+    margin: 0 auto;
+    width: 200px;
+    height: 200px;
+    border: 2px solid black;
+  }
+
+  #overlay{
+    background: rgba(0,0,0,0.7);
+    width:100%;
+    height:120%;
+    position: absolute;
+    top:0;
+    left:0;
+    text-align: center;
+    display:none;
+  }
+  
+  #overlay img{
+    width: 250px;
+    height: 250px;
+    margin-top: 10%;    
+    padding-bottom: 10px;
+  }
+  
+  #overlay p{
+    font-weight: bold;
+    color: white;
+  }
+
+}
+
+/* Display for Tablet */
+@media screen and (min-width: 768px) and (max-width: 1023px){
+
+  header{
+    position: fixed;
+    width: 100%;
+    background: white;
+  }  
+
+  #search-box{
+    width: 420px;
+    height: 35px;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    border-radius: 5px;
+    margin-top: 35px;
+    margin-bottom: 45px;
+    left: 50%;
+  }
+
+  .picture-gallery{
+    text-align:center;
+    padding-top: 120px;
+  }
+
+  .picture-gallery li{
+    display: inline-block;
+    padding: 0;
+    width: 50%;
+    float:left;
+    padding: 50px 0;
+    border-bottom: #000000 solid;
+  }
+
+  .picture-gallery img{
+    width: 200px;
+    height: 200px;
+  }
+  
+  .picture-gallery li:nth-child(even){
+    border-left: #000000 solid;
+  }	
+}
+
+
+/* Display for Laptop */
+@media screen and (min-width: 1024px){
+  
+  header{
+    position: fixed;
+    width: 100%;
+    background: white;
+  }
+  
+  #search-box{
+    width: 460px;
+    height: 35px;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    border-radius: 5px;
+    margin-top: 35px;
+    margin-bottom: 40px;
+    left: 50%;
+  }
+
+  .picture-gallery{
+    padding-top: 100px;
+    text-align:center;
+  }
+
+  .picture-gallery li{
+    display: inline-block;
+    padding: 0;
+    width: 980px;
+    border-bottom: none;
+    width: 25%;
+    float:left;
+    padding: 25px 30px;
+  }
+
+  .picture-gallery img{
+    width: 200px;
+    height: 200px;
+  }
+
+}
